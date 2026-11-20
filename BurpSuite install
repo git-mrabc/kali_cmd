@@ -1,0 +1,49 @@
+# Kali command : BurpSuite :
+
+Download jdk 14.0.2 : https://www.oracle.com/java/technologies/javase/jdk14-archive-downloads.html
+
+BurpSuite: https://portswigger.net/burp/releases
+
+# dpkg -i /home/kali/Desktop/jdk-14.0.2_linux-x64_bin.deb
+
+# update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-14.0.2/bin/java 2
+
+# update-alternatives --config java
+
+then select 2
+
+# chmod +x burp.sh
+
+# ./burp.sh
+
+# java -version
+
+# vim /etc/profile.d/jdk-14.0.2.sh
+
+then copy this and paste also save:
+
+export 2SDKDIR=  /usr/lib/jvm/jdk-14.0.2
+export J2REDIR=/usr/lib/jvm/jdk-14.0.2
+export PATH=$PATH:/usr/lib/jvm/jdk-14.0.2/bin:/usr/lib/jvm/jdk-14.0.2/bd/bin
+export JAVA_HOME=/usr/lib/jvm/jdk-14.0.2
+export DERBY_HOME=/usr/lib/jvm/jdk-14.0.2/db
+
+# source /etc/profile.d/jdk-14.0.2.sh
+
+# echo $JAVA_HOME
+
+# chmod +x burploader.jar
+
+# java -jar burploader.jar
+
+then start auto burploader then copy 1st encrypted codes, go to manual activation, paste there, see second section copy request from there and paste burploader 2nd section, got another code in 3rd section also copy that and paste burp suite windows. now it's activated.
+# create launcher > 
+
+# http://burpsuite/ <burp suite certificate download for firefox>
+
+
+# Create  Launcher > Name : burp_pro > Command : java -noverify 
+
+-javaagent:zerodaylab.jar -jar burpsuite_pro_v2021.7.jar > Working Directory :
+
+ /home/kali/Desktop/burp.sh 
