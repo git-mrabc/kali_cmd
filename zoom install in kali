@@ -1,0 +1,9 @@
+# zoom install
+> download zoom client for debian 
+> cd Download
+> sudo apt install rpm
+> sudo apt-get -f install
+> rpm-import package-siging-key.pub
+> apt --fix-broken install
+> sudo dpkg -i zoom_amd64.deb
+> zoom
