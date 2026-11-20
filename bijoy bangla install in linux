@@ -1,0 +1,55 @@
+#bijoy bangla install in kali
+
+#sudo apt-get install ibus-m17n -y
+#sudo chmod +x /usr/share/m17n/   
+#sudo chmod +x /usr/share/m17n/icons
+
+#git clone https://github.com/rafidalhaque/bijoy_linux.git
+
+#cd bijoy_linux/bijoy_linux
+
+#sudo cp bn-bijoyClassic.mim /usr/share/m17n/bn-bijoyClassic.mim
+
+#sudo cp bn-bijoyClassic.png /usr/share/m17n/icons/bn-bijoyClassic.png 
+
+#sudo cp bn-bijoyUnicode.mim /usr/share/m17n/bn-bijoyUnicode.mim
+
+#sudo cp bn-bijoyUnicode.png /usr/share/m17n/icons/bn-bijoyUnicode.png 
+
+
+#sudo chmod +x /var/lib/dpkg/info/m17n-db.list
+
+#sudo vim /var/lib/dpkg/info/m17n-db.list +    
+
+/usr/share/m17n/icons/bn-bijoyClassic.png
+/usr/share/m17n/bn-bijoyClassic.mim
+/usr/share/m17n/icons/bn-bijoyUnicode.png
+/usr/share/m17n/bn-bijoyUnicode.mim
+
+#sudo mkdir -p /usr/share/fonts/custom
+#sudo cp -rv SutonnyMJ-Regular.ttf /usr/share/fonts/custom/ SutonnyMJ-Regular.ttf
+
+Now Go to System >> Preferences >> Startup Applications
+
+Click the button: Add
+Fill the empty fields with the following information: 
+Name: IBus Daemon
+Command: /usr/bin/ibus-daemon -d
+Comment: Start IBus daemon when Gnome starts
+
+Restart your System.
+
+Go to System >> Preferences >> IBus Preferences
+Click Input Method
+Click Select an input method
+Go to Bengali >> bijoyClassic (m17n),bijoyUnicode (m17n)
+Then Click Add Button.
+Close the window by clicking Close Button. 
+
+
+To test Bijoy Keyboard go to:
+Applications >> Office >> OpenOffice.org Word Processor
+
+
+To active Bijoy Keyboard:
+Press Ctrl+Space and then Alt+Shift
