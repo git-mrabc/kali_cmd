@@ -1,0 +1,9 @@
+# winbox install kali linux:
+> cd /tmp
+> git clone https://github.com/mriza/winbox-installer.git
+> cd winbox-installer
+> sudo ./winbox-setup install OR sudo bash winbox-setup install
+> firewall-cmd --permanent --add-port=5678/udp
+> firewall-cmd --reload
+> Icon cache in GTK based desktop: gtk-update-icon-cache -f -t /usr/share/icons/hicolor
+> How to remove: sudo ./winbox-setup remove OR sudo ./winbox-setup remove
