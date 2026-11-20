@@ -1,0 +1,14 @@
+#waydroid in ubuntu
+#sudo apt update && sudo apt upgrade -y
+#sudo apt install curl ca-certificates -y
+#curl https://repo.waydro.id | sudo bash
+#sudo apt install waydroid -y
+#firewall-cmd --zone=trusted --add-interface=waydroid0
+
+
+
+#Uninstall WayDroid
+#sudo waydroid session stop
+#sudo waydroid container stop
+#sudo apt remove waydroid
+#sudo rm -rf /var/lib/waydroid /home/.waydroid ~/waydroid ~/.share/waydroid ~/.local/share/applications/aydroid ~/.local/share/waydroid
