@@ -1,0 +1,7 @@
+# wine install in kali linux
+# sudo dpkg --add-architecture i386
+# sudo apt-get update
+# sudo apt-get install wine:i386
+# sudo apt-get install wine-bin:i386
+# wine --version
+# sudo dpkg --add-architecture i386 && apt-get update && apt-get install wine-bin:i386
